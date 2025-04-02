@@ -42,7 +42,7 @@ export async function POST(request: Request) {
         }
       );
     }
-  } catch (_error) {
+  } catch (error) {
     return new Response(
       JSON.stringify({
         success: false,
@@ -54,4 +54,4 @@ export async function POST(request: Request) {
       }
     );
   }
-
+}
